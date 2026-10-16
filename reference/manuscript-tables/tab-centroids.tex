@@ -1,0 +1,24 @@
+% Table 2: existing three potentials, with explicit candidate-first orientation.
+\begin{table}[!t]
+\caption{First-argument Bregman centroids of an interior reliability profile.}
+\label{tab:centroids}
+\centering
+\begin{tablebody}
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{2.00in}>{\raggedright\arraybackslash}p{1.12in}>{\raggedright\arraybackslash}X@{}}
+\toprule
+Potential $\phi(x)$ & Dual coordinate $\phi'(x)$ & Left centroid $I_\phi$ \\
+\midrule
+$\tfrac12x^2$\newline Squared Euclidean & $x$ & Arithmetic mean $\bar S=J^{-1}\sum_jS_j$ \\
+\addlinespace[5pt]
+$x\ln x+(1-x)\ln(1-x)$\newline Negative Bernoulli entropy & $\operatorname{logit}(x)$ & $\operatorname{logistic}\!\left\{J^{-1}\sum_j\operatorname{logit}(S_j)\right\}=I$ \\
+\addlinespace[5pt]
+$-\ln x$\newline Burg potential & $-1/x$ & Harmonic mean $\operatorname{HM}(S)=\left(J^{-1}\sum_jS_j^{-1}\right)^{-1}$ \\
+\bottomrule
+\end{tabularx}
+\end{tablebody}
+\par\vspace{0.4\baselineskip}
+\begin{minipage}{\linewidth}\normalsize\doublespacing\raggedright
+\textit{Note.} Each centroid minimizes $J^{-1}\sum_jD_\phi(p,S_j)$ with respect to its first argument. Minimizing with respect to the second argument gives $\bar S$ for all three potentials \citep{NielsenNock2009,NielsenNock2020}. For an interior profile, $\operatorname{HM}(S)\leq I$ and $\operatorname{HM}(S)\leq\bar S$. All three means coincide if and only if the profile is constant. There is no universal ordering of $I$ and $\bar S$, and equality of these two means does not imply $H=0$. For example, the profile $(.2,.8)$ gives $I=\bar S=.5$ and $H=\ln(5/4)>0$. Further details are given in Online Appendices~\ref{sec:B-centroid} and~\ref{sec:C-dispersion}.
+\end{minipage}
+\end{table}

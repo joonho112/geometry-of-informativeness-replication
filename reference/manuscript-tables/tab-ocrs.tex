@@ -1,0 +1,31 @@
+%% Generated from analysis/outputs/numerical-stability/ocrs-corrected-summaries.csv.
+\begin{table}[!t]
+\caption{Reliability profiles for the Online Credit Recovery Study.}
+\label{tab:ocrs}
+\centering
+\begin{tablebody}
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+Analysis & $J$ & $I$ [95\% CrI] & $\bar S$ & $H$ [95\% CrI] & $J_{\mathrm{eff}}$ \\
+\midrule
+\multicolumn{6}{@{}l}{\emph{Course passing (risk difference)}} \\
+\addlinespace[5pt]
+Pooled & 32 & $.67\ [.50,.81]$ & $.66$ & $.025\ [.019,.029]$ & $31.2$ \\
+\addlinespace[5pt]
+Algebra 1 & 13 & $.63\ [.29,.87]$ & $.63$ & $.016\ [.009,.020]$ & $12.7$ \\
+\addlinespace[5pt]
+English 9 & 19 & $.71\ [.49,.87]$ & $.70$ & $.028\ [.018,.034]$ & $18.5$ \\
+\addlinespace[5pt]
+Adjusted & 32 & $.65\ [.47,.80]$ & $.64$ & $.028\ [.021,.032]$ & $31.0$ \\
+\addlinespace[9pt]
+\multicolumn{6}{@{}l}{\emph{Year-four credits (subject-matched)}} \\
+\addlinespace[5pt]
+Pooled & 32 & $.32\ [.02,.60]$ & $.33$ & $.028\ [.003,.038]$ & $28.8$ \\
+\bottomrule
+\end{tabular}
+\end{tablebody}
+\par\vspace{0.4\baselineskip}
+\begin{minipage}{\linewidth}\normalsize\doublespacing\raggedright
+\textit{Note.} Entries are posterior means of the functionals obtained by integration. Brackets give 95\% credible intervals conditional on the supplied variance estimates. The inputs are block-adjusted treatment contrasts; the adjusted analysis also includes the released test-score and GPA covariates and missingness indicators. $J_{\mathrm{eff}}$ is the effective site count defined in Section~\ref{subsec:jeff}. Fitted population summaries, the plug-in comparison, midpoint probability, and $V$ are given in Table~\ref{tab:G-ocrs-ancillary}. Appendix~\ref{sec:G-ocrs} describes the targets and sensitivity analyses.
+\end{minipage}
+\end{table}

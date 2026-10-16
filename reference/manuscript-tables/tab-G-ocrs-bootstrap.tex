@@ -1,0 +1,24 @@
+\begin{table}[!t]
+\caption{Central 95\% spreads of refitted summaries for alternative variance floors.}
+\label{tab:G-ocrs-bootstrap}
+\centering
+\begin{tablebody}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Outcome (floor factor) & $I_b$ & $H_b$ & $V_b$ \\
+\midrule
+Course passing ($0.5\times$) & $[.665,.828]$ & $[.016,.032]$ & $[.191,.353]$ \\
+\addlinespace[5pt]
+Course passing ($1\times$) & $[.665,.828]$ & $[.015,.031]$ & $[.191,.324]$ \\
+\addlinespace[5pt]
+Course passing ($2\times$) & $[.662,.825]$ & $[.015,.030]$ & $[.188,.318]$ \\
+\addlinespace[9pt]
+Credits ($0.5$--$2\times$) & $[.377,.726]$ & $[.025,.052]$ & $[.234,.468]$ \\
+\bottomrule
+\end{tabular}
+\end{tablebody}
+\par\vspace{0.4\baselineskip}
+\begin{minipage}{\linewidth}\normalsize\doublespacing\raggedright
+\textit{Note.} Each row uses the same 500 bootstrap samples per outcome, obtained by resampling within cells, and reports empirical .025/.975 quantiles. Here $I_b$ and $H_b$ are posterior means of the functionals obtained by integration for refit $b$, and $V_b$ is its log-variance spread. Factor $1$ denotes the original floor; credits is unchanged for factors $0.5$, $1$, and $2$. These spreads across refits are distinct from posterior credible intervals conditional on the original data.
+\end{minipage}
+\end{table}

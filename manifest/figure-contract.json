@@ -1,0 +1,22 @@
+{
+  "scope": "Draw Figures 1–8 from saved results; no model fitting or participant data required.",
+  "width_inches": 6.5,
+  "maximum_height_inches": 6.3,
+  "base_tex_points": 12,
+  "math_script_tex_points": 8,
+  "text_font": "Source Sans 3 (vendored OFL Regular/Bold)",
+  "mathematical_fonts": "Native Computer Modern; fontspec no-math required",
+  "scientific_invariants": [
+    "Figure 1: centered variables and first-argument Bernoulli–KL centroid",
+    "Figure 2: I=0.3 and specified dispersion profiles",
+    "Figure 3: empirical summaries from adaptive quadrature",
+    "Figure 4: lognormal and local hypothetical-design identities",
+    "Figure 5: all 72 simulation cells and 24 V=2 loss-ratio comparisons",
+    "Figure 6: 27 cross-validation rows using generating-profile diagnostics; nine loss/estimator comparisons",
+    "Figure 7: selected 500-replication cells; means and 1.96 MCSE, not site-rank confidence intervals",
+    "Figure 8: OCRS summaries, ordered site inputs, and saved posterior draws"
+  ],
+  "source_lock": "manifest/figure-source-lock.json",
+  "source_lock_policy": "Check input checksums before drawing. Update recorded checksums only after checking an intentionally replaced input against the paper.",
+  "immutable_inputs": "Plotting inputs are in analysis/inputs/figure-reference; recalculated results are written to analysis/outputs. Drawing figures does not refit models or update input checksums."
+}

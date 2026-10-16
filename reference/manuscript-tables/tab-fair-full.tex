@@ -1,0 +1,35 @@
+\begin{table}[!ht]
+\caption{Five-fold cross-validation $R^2$ across cell means for all combinations of estimator and loss.}
+\label{tab:F-fair}
+\centering
+\begin{tablebody}
+\begin{tabular}{@{}llrrr@{}}
+\toprule
+Loss & Estimator & $H$ & $V$ & $\bar S$ \\
+\midrule
+RMSE & PM & .98964 & .99155 & .99843 \\
+\addlinespace[5pt]
+RMSE & CB & .99099 & .99336 & .99816 \\
+\addlinespace[5pt]
+RMSE & GR & .99076 & .99308 & .99784 \\
+\addlinespace[9pt]
+MSELP & PM & .99269 & .99452 & .99923 \\
+\addlinespace[5pt]
+MSELP & CB & .99269 & .99452 & .99923 \\
+\addlinespace[5pt]
+MSELP & GR & .99298 & .99470 & .99919 \\
+\addlinespace[9pt]
+ISEL & PM & .99598 & .99663 & .99757 \\
+\addlinespace[5pt]
+ISEL & CB & .99389 & .99575 & .99693 \\
+\addlinespace[5pt]
+ISEL & GR & .99586 & .99572 & .99518 \\
+\bottomrule
+\end{tabular}
+\end{tablebody}
+\par\vspace{0.4\baselineskip}
+\begin{minipage}{\linewidth}\normalsize\doublespacing\raggedright
+\textit{Note.} $I$, $H$, $V$, and $\bar S$ are calculated from the true generating profiles. All models include the same interaction among factors, together with an interaction between the profile summary and $I$. Cross-validation randomly partitions rows of cell means within the selected simulation grid, so the results do not validate prediction for new families or trials. Values are $R^2$ for predicting the logarithm of mean loss in held-out rows. These prediction comparisons do not quantify confidence or calibration for site effects, ranks, or EDFs.
+\end{minipage}
+\end{table}
+

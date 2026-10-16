@@ -1,0 +1,26 @@
+\begin{table}[!t]
+\caption{Additional OCRS posterior summaries.}
+\label{tab:G-ocrs-ancillary}
+\centering
+\begin{tablebody}
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+Analysis & $\tau$ & $\sigma$ [95\% CrI] & $I_{\mathrm{plug}}$ & $\Pr(I>\tfrac12)$ & $V$ \\
+\midrule
+Course passing & $-.130$ & $.188\ [.127,.266]$ & $.691$ & $.973$ & $.237$ \\
+\addlinespace[5pt]
+Algebra 1 & $-.081$ & $.189\ [.086,.339]$ & $.691$ & $.818$ & $.158$ \\
+\addlinespace[5pt]
+English 9 & $-.163$ & $.203\ [.122,.318]$ & $.740$ & $.972$ & $.282$ \\
+\addlinespace[5pt]
+Adjusted & $-.117$ & $.184\ [.124,.261]$ & $.673$ & $.955$ & $.260$ \\
+\addlinespace[9pt]
+Credits & $-.124$ & $2.807\ [.610,4.949]$ & $.353$ & $.114$ & $.313$ \\
+\bottomrule
+\end{tabular}
+\end{tablebody}
+\par\vspace{0.4\baselineskip}
+\begin{minipage}{\linewidth}\normalsize\doublespacing\raggedright
+\textit{Note.} The first four rows concern course passing; credits are matched to subject. Entries for $\tau$ and $\sigma$ are posterior means for the population of site effects under the working model, with an interval for $\sigma$. Here $I_{\mathrm{plug}}=I\{\E(\sigma^2\mid\text{data})\}$. The probability column also conditions on the data and supplied variances, under which $V$ is fixed. Both $\tau$ and $\sigma$ are expressed in outcome units, so their magnitudes are not directly comparable between course passing and credits.
+\end{minipage}
+\end{table}

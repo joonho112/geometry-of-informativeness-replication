@@ -1,0 +1,20 @@
+[
+  {
+    "name": "SourceSans3-Regular.otf",
+    "url": "https://raw.githubusercontent.com/adobe-fonts/source-sans/release/OTF/SourceSans3-Regular.otf",
+    "bytes": 334924,
+    "sha256": "08df266400933d3178d081a45f94a08814c3e55b4b7dd2e0ff69cb1329f13ab6"
+  },
+  {
+    "name": "SourceSans3-Bold.otf",
+    "url": "https://raw.githubusercontent.com/adobe-fonts/source-sans/release/OTF/SourceSans3-Bold.otf",
+    "bytes": 343596,
+    "sha256": "7776ddb9f3eb58683e59f28d558d8896b768c2d0c80799fb3f1c56c54dfd98c9"
+  },
+  {
+    "name": "SourceSans3-LICENSE.md",
+    "url": "https://raw.githubusercontent.com/adobe-fonts/source-sans/release/LICENSE.md",
+    "bytes": 4486,
+    "sha256": "56af9b9c6715597e458284a474dc118a50a4150e9d547c70f7b4a33c3e6a9328"
+  }
+]

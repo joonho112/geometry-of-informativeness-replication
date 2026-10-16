@@ -1,0 +1,219 @@
+[
+  {
+    "group": "simulation",
+    "expected": "reference/tables/tbl_fair.csv",
+    "actual": "analysis/outputs/tables/tbl_fair.csv",
+    "absolute_tolerance": 1e-10,
+    "relative_tolerance": 1e-08
+  },
+  {
+    "group": "simulation",
+    "expected": "reference/tables/tbl_mcse.csv",
+    "actual": "analysis/outputs/tables/tbl_mcse.csv",
+    "absolute_tolerance": 1e-10,
+    "relative_tolerance": 1e-08
+  },
+  {
+    "group": "simulation",
+    "expected": "reference/tables/tbl_metamodel.csv",
+    "actual": "analysis/outputs/tables/tbl_metamodel.csv",
+    "absolute_tolerance": 1e-10,
+    "relative_tolerance": 1e-08
+  },
+  {
+    "group": "simulation",
+    "expected": "reference/tables/tbl_oracle.csv",
+    "actual": "analysis/outputs/tables/tbl_oracle.csv",
+    "absolute_tolerance": 1e-10,
+    "relative_tolerance": 1e-08
+  },
+  {
+    "group": "simulation",
+    "expected": "reference/tables/tbl_ratios.csv",
+    "actual": "analysis/outputs/tables/tbl_ratios.csv",
+    "absolute_tolerance": 1e-10,
+    "relative_tolerance": 1e-08
+  },
+  {
+    "group": "simulation",
+    "expected": "reference/tables/tbl_ratios_shape.csv",
+    "actual": "analysis/outputs/tables/tbl_ratios_shape.csv",
+    "absolute_tolerance": 1e-10,
+    "relative_tolerance": 1e-08
+  },
+  {
+    "group": "simulation",
+    "expected": "reference/evidence-audit/fixedN-diagnostics.csv",
+    "actual": "analysis/outputs/evidence-audit/fixedN-diagnostics.csv",
+    "absolute_tolerance": 1e-10,
+    "relative_tolerance": 1e-08
+  },
+  {
+    "group": "simulation",
+    "expected": "reference/evidence-audit/fixedN-family-cellmean-ratios.csv",
+    "actual": "analysis/outputs/evidence-audit/fixedN-family-cellmean-ratios.csv",
+    "absolute_tolerance": 1e-10,
+    "relative_tolerance": 1e-08
+  },
+  {
+    "group": "simulation",
+    "expected": "reference/evidence-audit/fixedN-mean-cell-ratios.csv",
+    "actual": "analysis/outputs/evidence-audit/fixedN-mean-cell-ratios.csv",
+    "absolute_tolerance": 1e-10,
+    "relative_tolerance": 1e-08
+  },
+  {
+    "group": "simulation",
+    "expected": "reference/evidence-audit/fixedN-monotonicity.csv",
+    "actual": "analysis/outputs/evidence-audit/fixedN-monotonicity.csv",
+    "absolute_tolerance": 1e-10,
+    "relative_tolerance": 1e-08
+  },
+  {
+    "group": "simulation",
+    "expected": "reference/evidence-audit/fixedN-realized-designs.csv",
+    "actual": "analysis/outputs/evidence-audit/fixedN-realized-designs.csv",
+    "absolute_tolerance": 1e-10,
+    "relative_tolerance": 1e-08
+  },
+  {
+    "group": "simulation",
+    "expected": "reference/evidence-audit/gr-rank-gains-even.csv",
+    "actual": "analysis/outputs/evidence-audit/gr-rank-gains-even.csv",
+    "absolute_tolerance": 1e-10,
+    "relative_tolerance": 1e-08
+  },
+  {
+    "group": "simulation",
+    "expected": "reference/evidence-audit/pm-family-direction.csv",
+    "actual": "analysis/outputs/evidence-audit/pm-family-direction.csv",
+    "absolute_tolerance": 1e-10,
+    "relative_tolerance": 1e-08
+  },
+  {
+    "group": "simulation",
+    "expected": "reference/evidence-audit/profile-precision-multipliers.csv",
+    "actual": "analysis/outputs/evidence-audit/profile-precision-multipliers.csv",
+    "absolute_tolerance": 1e-10,
+    "relative_tolerance": 1e-08
+  },
+  {
+    "group": "simulation",
+    "expected": "reference/evidence-audit/stress-cell-winners.csv",
+    "actual": "analysis/outputs/evidence-audit/stress-cell-winners.csv",
+    "absolute_tolerance": 1e-10,
+    "relative_tolerance": 1e-08
+  },
+  {
+    "group": "simulation",
+    "expected": "reference/evidence-audit/stress-ratios-by-G.csv",
+    "actual": "analysis/outputs/evidence-audit/stress-ratios-by-G.csv",
+    "absolute_tolerance": 1e-10,
+    "relative_tolerance": 1e-08
+  },
+  {
+    "group": "simulation",
+    "expected": "reference/evidence-audit/component-mcse-structure.csv",
+    "actual": "analysis/outputs/evidence-audit/component-mcse-structure.csv",
+    "absolute_tolerance": 1e-10,
+    "relative_tolerance": 1e-08
+  },
+  {
+    "group": "posterior",
+    "expected": "reference/numerical-stability/ocrs-corrected-summaries.csv",
+    "actual": "analysis/outputs/numerical-stability/ocrs-corrected-summaries.csv",
+    "absolute_tolerance": 1e-10,
+    "relative_tolerance": 1e-08
+  },
+  {
+    "group": "posterior",
+    "expected": "reference/numerical-stability/selected-boundary-cases.csv",
+    "actual": "analysis/outputs/numerical-stability/selected-boundary-cases.csv",
+    "absolute_tolerance": 1e-10,
+    "relative_tolerance": 1e-08
+  },
+  {
+    "group": "posterior",
+    "expected": "reference/numerical-stability/selected-boundary-losses.csv",
+    "actual": "analysis/outputs/numerical-stability/selected-boundary-losses.csv",
+    "absolute_tolerance": 1e-10,
+    "relative_tolerance": 1e-08
+  },
+  {
+    "group": "posterior",
+    "expected": "reference/numerical-stability/selected-boundary-loss-differences.csv",
+    "actual": "analysis/outputs/numerical-stability/selected-boundary-loss-differences.csv",
+    "absolute_tolerance": 1e-10,
+    "relative_tolerance": 1e-08
+  },
+  {
+    "group": "sensitivity",
+    "expected": "reference/ocrs-audit/bootstrap-reference-summary.csv",
+    "actual": "analysis/outputs/ocrs-audit/bootstrap-reference-summary.csv",
+    "absolute_tolerance": 1e-10,
+    "relative_tolerance": 1e-08
+  },
+  {
+    "group": "sensitivity",
+    "expected": "reference/ocrs-audit/subset-reference-summary.csv",
+    "actual": "analysis/outputs/ocrs-audit/subset-reference-summary.csv",
+    "absolute_tolerance": 1e-10,
+    "relative_tolerance": 1e-08
+  },
+  {
+    "group": "sensitivity",
+    "expected": "reference/ocrs-audit/bootstrap-floor-reference-summary.csv",
+    "actual": "analysis/outputs/ocrs-audit/bootstrap-floor-reference-summary.csv",
+    "absolute_tolerance": 1e-10,
+    "relative_tolerance": 1e-08
+  },
+  {
+    "group": "sensitivity",
+    "expected": "reference/ocrs-audit/firststage-scale-reference.csv",
+    "actual": "analysis/outputs/ocrs-audit/firststage-scale-reference.csv",
+    "absolute_tolerance": 1e-10,
+    "relative_tolerance": 1e-08
+  },
+  {
+    "group": "firststage",
+    "expected": "reference/ocrs-audit/site-audit.csv",
+    "actual": "analysis/outputs/ocrs-audit/site-audit.csv",
+    "absolute_tolerance": 1e-10,
+    "relative_tolerance": 1e-08
+  },
+  {
+    "group": "firststage",
+    "expected": "reference/ocrs-audit/design-matrix-audit.csv",
+    "actual": "analysis/outputs/ocrs-audit/design-matrix-audit.csv",
+    "absolute_tolerance": 1e-10,
+    "relative_tolerance": 1e-08
+  },
+  {
+    "group": "firststage",
+    "expected": "reference/ocrs-audit/saved-input-comparison.csv",
+    "actual": "analysis/outputs/ocrs-audit/saved-input-comparison.csv",
+    "absolute_tolerance": 1e-10,
+    "relative_tolerance": 1e-08
+  },
+  {
+    "group": "firststage",
+    "expected": "reference/ocrs-audit/block-support-distribution.csv",
+    "actual": "analysis/outputs/ocrs-audit/block-support-distribution.csv",
+    "absolute_tolerance": 1e-10,
+    "relative_tolerance": 1e-08
+  },
+  {
+    "group": "firststage",
+    "expected": "reference/ocrs-audit/hc2-clamp-summary.csv",
+    "actual": "analysis/outputs/ocrs-audit/hc2-clamp-summary.csv",
+    "absolute_tolerance": 1e-10,
+    "relative_tolerance": 1e-08
+  },
+  {
+    "group": "firststage",
+    "expected": "reference/ocrs-audit/required-input-missingness.csv",
+    "actual": "analysis/outputs/ocrs-audit/required-input-missingness.csv",
+    "absolute_tolerance": 1e-10,
+    "relative_tolerance": 1e-08
+  }
+]

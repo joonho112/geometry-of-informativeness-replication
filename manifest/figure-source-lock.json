@@ -1,0 +1,15 @@
+{
+  "manifest/figure-contract.json": "9c7d642b66b1d7cdaae5673d922574fffe13511fe7d4fb6fbe94f685199cc7fe",
+  "analysis/scripts/legacy/00_utils.R": "9fa4cd727f9132044aa9efd671168d20456efa4ebf3a7fe0afe01e143f397dfe",
+  "fig_src/fonts/SourceSans3-Regular.otf": "08df266400933d3178d081a45f94a08814c3e55b4b7dd2e0ff69cb1329f13ab6",
+  "fig_src/fonts/SourceSans3-Bold.otf": "7776ddb9f3eb58683e59f28d558d8896b768c2d0c80799fb3f1c56c54dfd98c9",
+  "analysis/inputs/sim_main_reps.rds": "938f4c5af508217a2c350eb11dbf64323c8bc21dd44f945be7d20f75a3e6bf9b",
+  "analysis/inputs/precomputed/sim_landscape.rds": "f249b46ae949c1d186760be9a4e6b97c65d288957bb8f4f8cce79aea810800da",
+  "analysis/inputs/precomputed/sim_stress_cells.rds": "d12ff0691f5a68e09d70dd35d08c5ecc3fa51261c58d8c6555e29f268d908300",
+  "analysis/inputs/tables/tbl_ocrs_sites.csv": "6f82152eeba4b9bc42a97592c4706a11e6fed8c8f88a5e908fb516aa3561c7f1",
+  "analysis/inputs/figure-reference/tbl_ratios_shape.csv": "5f5ddf65f98e28600e8020cd05517362a44382f9cf0a290021509ffedb257e83",
+  "analysis/inputs/figure-reference/tbl_fair.csv": "28742097d3852dcc9f5648c030f8d8fa0886b04744325af96131deaa1572b439",
+  "analysis/inputs/figure-reference/design-illustration-data.csv": "a0273c73326bedd673f33b28e65db121b612c674c78ca13d76ad1da89c6ebe05",
+  "analysis/inputs/figure-reference/ocrs_fits_corrected.rds": "f596a2dc12466b6d648eb3c76d80753e65e25b3c4b5259a404ee0a3b6f3be1f2",
+  "analysis/inputs/figure-reference/ocrs-corrected-summaries.csv": "033b1e7cadbe185d438e3216b07c67cd822154bd55a3dda752fab4838a8c90a7"
+}

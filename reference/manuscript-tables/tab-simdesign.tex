@@ -1,0 +1,44 @@
+%% Simulation design reconciled with actual saved-input audit.
+\begin{table}[!t]
+\caption{Simulation settings for profiles with fixed $(I,V)$ and profiles with fixed total enrollment.}
+\label{tab:simdesign}
+\centering
+\begin{tablebody}
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{1.72in}>{\raggedright\arraybackslash}X@{}}
+\toprule
+Factor & Levels \\
+\midrule
+\multicolumn{2}{@{}l}{\emph{Fixed informativeness: 702 cells}} \\
+\addlinespace[5pt]
+Sites $J$ & $25$, $50$, $100$ \\
+\addlinespace[5pt]
+Informativeness $I$ & $.05$, $.15$, $.30$, $.45$, $.60$, $.75$ \\
+\addlinespace[5pt]
+Logit dispersion $V$ & $0$, $.5$, $1$, $2$ \\
+\addlinespace[5pt]
+Shape for $V>0$ & Even; bimodal; concentrated precise; concentrated noisy. Shapes coincide at $V=0$. \\
+\midrule
+\multicolumn{2}{@{}l}{\emph{Fixed enrollment: 108 cells}} \\
+\addlinespace[5pt]
+Sites and mean size & $J\in\{25,50,100\}$, $\bar n\in\{20,50,100\}$; $N=J\bar n$, $v_j=4/n_j$ \\
+\addlinespace[5pt]
+Parent Gamma CV & $0$, $.25$, $.50$, $.75$; continuous sizes obtained by clipping and rescaling twice (Appendix~\ref{subsec:F-fixedN}) \\
+\midrule
+\multicolumn{2}{@{}l}{\emph{Common settings}} \\
+\addlinespace[5pt]
+True $G$ & Gaussian; two-component Gaussian mixture; asymmetric Laplace \\
+\addlinespace[5pt]
+SD and replications & $\sigma=.20$; 500 replications per cell \\
+\addlinespace[5pt]
+Procedures & ML, PM, CB, GR; known-$(\tau,\sigma^2)$ linear benchmark in both experiments; known-$\sigma^2$ semi-oracle for fixed informativeness \\
+\addlinespace[5pt]
+Losses & RMSE, MSELP, ISEL for the finite effects \\
+\bottomrule
+\end{tabularx}
+\end{tablebody}
+\par\vspace{0.4\baselineskip}
+\begin{minipage}{\linewidth}\normalsize\doublespacing\raggedright
+\textit{Note.} The stress profiles attain the specified $(I,V)$ exactly. Increasing dispersion at fixed geometric mean also increases total precision, so the two sets of simulations address different questions. Profiles within families use paired data draws. Fits use a normal model, a flat reference prior on the mean and SD, 250 nodes, $M=2{,}000$, and the marginal-variance approximation for CB. Data were generated with \textsf{multisiteDGP} 0.1.0 \citep{multisiteDGP}. Construction and aggregation are described in Appendix~\ref{sec:F-simulation}.
+\end{minipage}
+\end{table}

@@ -1,0 +1,24 @@
+\begin{table}[!ht]
+\caption{Fixed-enrollment experiment: arithmetic means of ratios of cell mean losses to their balanced counterparts.}
+\label{tab:F-fixedN}
+\centering
+\begin{tablebody}
+\begin{tabular}{@{}lrrrrrrrr@{}}
+\toprule
+& \multicolumn{3}{c}{PM} & \multicolumn{3}{c}{GR} & \multicolumn{2}{c}{Mean diagnostics} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}\cmidrule(lr){8-9}
+$\mathrm{CV}_{\Gamma}$ & RMSE & MSELP & ISEL & RMSE & MSELP & ISEL & $I$ & $V$ \\
+\midrule
+$.25$ & 1.00 & 1.01 & 1.01 & 1.01 & 1.01 & 1.01 & .327 & .06 \\
+\addlinespace[5pt]
+$.50$ & 1.02 & 1.04 & 1.05 & 1.03 & 1.04 & 1.03 & .308 & .27 \\
+\addlinespace[5pt]
+$.75$ & 1.03 & 1.08 & 1.11 & 1.05 & 1.08 & 1.05 & .279 & .61 \\
+\bottomrule
+\end{tabular}
+\end{tablebody}
+\par\vspace{0.4\baselineskip}
+\begin{minipage}{\linewidth}\normalsize\doublespacing\raggedright
+\textit{Note.} The arithmetic mean loss in each cell is divided by its balanced counterpart, and the resulting ratios are averaged with equal weight over the 27 $(J,\bar n,G)$ families: $J\in\{25,50,100\}$, $\bar n\in\{20,50,100\}$, and three generators. CV levels within a family use common data draws. Diagnostics are also arithmetic averages over the grid. At balance, their means are $I=.333$, $V=0$, whereas individual balanced $I$ values depend on $\bar n$. The parent Gamma CV differs from the realized CV of the finite profile.
+\end{minipage}
+\end{table}

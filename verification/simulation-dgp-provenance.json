@@ -1,0 +1,15 @@
+{
+  "package": "multisiteDGP 0.1.0",
+  "source": "https://github.com/joonho112/multisiteDGP",
+  "source_commit": "855de5e8292cbd318e4f7d4e84b5dd7e098a0c39",
+  "ald_reference": "LaplacesDemon 16.1.8",
+  "scope": "No-covariate site-effect generators used in the simulations. Gaussian, mixture, and asymmetric Laplace draws preserve the operation order and random-number sequence of the recorded package.",
+  "kernels": "analysis/scripts/dependencies/historical-dgp.R",
+  "license": "analysis/scripts/dependencies/LICENSE-multisiteDGP.txt",
+  "rng": [
+    "Mersenne-Twister",
+    "Inversion",
+    "Rejection"
+  ],
+  "kernel_sha256": "49713748d35775d6bc5d1b2ac89142b8436bb75f4b83f0aa78d97cd5d6857bd4"
+}

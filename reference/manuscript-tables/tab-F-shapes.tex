@@ -1,0 +1,26 @@
+\begin{table}[!ht]
+\caption{Geometric means of paired RMSE ratios for fitted PM by profile shape.}
+\label{tab:F-shapes}
+\centering
+\begin{tablebody}
+\begin{tabular}{@{}lrrrrrr@{}}
+\toprule
+& \multicolumn{6}{c}{Informativeness $I$} \\
+\cmidrule(lr){2-7}
+Profile shape & .05 & .15 & .30 & .45 & .60 & .75 \\
+\midrule
+Even & .86 & .92 & .94 & .98 & 1.03 & 1.12 \\
+\addlinespace[5pt]
+Bimodal & .86 & .92 & .94 & .97 & 1.04 & 1.14 \\
+\addlinespace[5pt]
+Concentrated precise & .84 & .94 & .99 & 1.03 & 1.08 & 1.15 \\
+\addlinespace[5pt]
+Concentrated noisy & .90 & .93 & .93 & .93 & .96 & 1.05 \\
+\bottomrule
+\end{tabular}
+\end{tablebody}
+\par\vspace{0.4\baselineskip}
+\begin{minipage}{\linewidth}\normalsize\doublespacing\raggedright
+\textit{Note.} Aggregation is as in Table~\ref{tab:F-ratios}. The informativeness level at which the aggregate ratio crosses one varies by shape; these crossings are not exact thresholds for fitted PM. Nine of the 648 comparisons across individual families, nonzero dispersion levels, and shapes depart from the direction predicted by the benchmark with known inputs. The maximum MCSE for the PM RMSE ratios in this table is $.00224$.
+\end{minipage}
+\end{table}

@@ -1,0 +1,90 @@
+{
+  "purpose": "Numerical precision checks conditional on fixed site estimates and variances, using the normal working model with a reference measure flat in the mean and standard deviation.",
+  "deterministic_absolute_tolerance": {
+    "I.mean": 0.0005,
+    "I.q025": 0.001,
+    "I.q500": 0.001,
+    "I.q975": 0.001,
+    "Sbar.mean": 0.0005,
+    "Sbar.q025": 0.001,
+    "Sbar.q500": 0.001,
+    "Sbar.q975": 0.001,
+    "H.mean": 5e-05,
+    "H.q025": 0.0001,
+    "H.q500": 0.0001,
+    "H.q975": 0.0001,
+    "Jeff.mean": 0.005,
+    "Jeff.q025": 0.02,
+    "Jeff.q500": 0.02,
+    "Jeff.q975": 0.02,
+    "I_plugin": 0.0005,
+    "P_I_gt_half": 0.001
+  },
+  "Ea_tolerance": {
+    "absolute": 1e-10,
+    "relative": 0.002
+  },
+  "secondary_scale_summary_tolerance": {
+    "sigma_mean_in_sqrt_GMv_units": 0.001,
+    "sigma_quantile_in_sqrt_GMv_units": 0.002,
+    "tau_mean_in_sqrt_GMv_units": 0.001
+  },
+  "reference_relative_integration_tolerance": 1e-10,
+  "reference_absolute_integration_tolerance_scaled_density": 1e-12,
+  "reference_tail_mass_bound": 1e-12,
+  "reference_tail_relative_moment_bound": 1e-10,
+  "reference_agreement_fraction_of_reporting_tolerance": 0.02,
+  "monte_carlo": {
+    "saved_draws": 20000,
+    "separate_from_deterministic_bias": true,
+    "standardized_mean_error_screen": 3.5,
+    "quantile_rank_interval": 0.999,
+    "precision_rule": "Report one-SE and 3.5-SE intervals (quantiles use exact-binomial rank interval); a deterministic discrepancy is evaluated on the exact legacy sampler law, never inferred from a single Monte Carlo realization. Finite-draw deviations exceeding reporting tolerance are precision limitations, not automatic evidence of grid bias."
+  },
+  "selected_simulation_checks": {
+    "type": "six fresh fixed-seed Gaussian boundary examples, not reproduction of the full simulation",
+    "seed": 2026101405,
+    "sigma_true": 0.2,
+    "cases": [
+      {
+        "J": 25,
+        "I": 0.05,
+        "V": 0,
+        "shape": "even"
+      },
+      {
+        "J": 25,
+        "I": 0.05,
+        "V": 2,
+        "shape": "even"
+      },
+      {
+        "J": 25,
+        "I": 0.05,
+        "V": 2,
+        "shape": "concentrated"
+      },
+      {
+        "J": 25,
+        "I": 0.75,
+        "V": 2,
+        "shape": "concentrated_noisy"
+      },
+      {
+        "J": 100,
+        "I": 0.05,
+        "V": 2,
+        "shape": "concentrated"
+      },
+      {
+        "J": 100,
+        "I": 0.75,
+        "V": 0,
+        "shape": "even"
+      }
+    ]
+  },
+  "interpretation": "Tolerances are numerical/reporting criteria, not scientific effect thresholds or frequentist coverage claims. I/Sbar and probability targets support two-decimal reporting; H supports three decimals; Jeff supports one decimal, with a safety margin. Ea is monitored separately because unbounded moments can be more tail-sensitive than bounded diagnostics.",
+  "specified_before_comparison": true,
+  "deterministic_comparison_rule": "Flag exact 250-node grid/jitter results that differ from the untruncated reference by more than a reporting tolerance. Export quadrature summaries regardless of whether discrepancies arise from grid approximation or finite posterior draws. The model, prior, supplied site estimates and variances, and causal target are unchanged."
+}

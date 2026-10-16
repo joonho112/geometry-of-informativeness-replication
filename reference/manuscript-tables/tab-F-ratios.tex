@@ -1,0 +1,44 @@
+\begin{table}[!ht]
+\caption{Geometric means of paired loss ratios comparing $V=2$ with $V=0$ for even profiles.}
+\label{tab:F-ratios}
+\centering
+\begin{tablebody}
+\begin{tabular}{@{}lrrrrrr@{}}
+\toprule
+& \multicolumn{6}{c}{Informativeness $I$} \\
+\cmidrule(lr){2-7}
+Estimator, loss & .05 & .15 & .30 & .45 & .60 & .75 \\
+\midrule
+PM, RMSE & .86 & .92 & .94 & .98 & 1.03 & 1.12 \\
+\addlinespace[5pt]
+CB, RMSE & .76 & .88 & .96 & 1.00 & 1.06 & 1.15 \\
+\addlinespace[5pt]
+GR, RMSE & .76 & .89 & .96 & 1.01 & 1.05 & 1.13 \\
+\addlinespace[5pt]
+ML, RMSE & 1.51 & 1.51 & 1.50 & 1.51 & 1.50 & 1.50 \\
+\addlinespace[9pt]
+Linear benchmark, RMSE & .98 & .95 & .96 & .98 & 1.03 & 1.11 \\
+\addlinespace[5pt]
+Semi-oracle, RMSE & .92 & .94 & .95 & .98 & 1.03 & 1.12 \\
+\addlinespace[9pt]
+PM ($=$ CB), MSELP & .93 & .92 & .94 & .99 & 1.07 & 1.20 \\
+\addlinespace[5pt]
+GR, MSELP & .93 & .92 & .94 & .99 & 1.06 & 1.18 \\
+\addlinespace[5pt]
+ML, MSELP & 1.02 & 1.05 & 1.11 & 1.19 & 1.28 & 1.40 \\
+\addlinespace[9pt]
+PM, ISEL & .98 & .88 & .84 & .92 & 1.05 & 1.20 \\
+\addlinespace[5pt]
+CB, ISEL & .49 & .76 & .83 & .89 & .96 & 1.07 \\
+\addlinespace[5pt]
+GR, ISEL & .57 & .77 & .76 & .82 & .88 & .98 \\
+\addlinespace[5pt]
+ML, ISEL & 1.07 & 1.19 & 1.34 & 1.45 & 1.52 & 1.55 \\
+\bottomrule
+\end{tabular}
+\end{tablebody}
+\par\vspace{0.4\baselineskip}
+\begin{minipage}{\linewidth}\normalsize\doublespacing\raggedright
+\textit{Note.} Entries are $\exp\{(KR)^{-1}\sum_{f,r}\log(L^{V=2}_{fr}/L^{V=0}_{fr})\}$; these differ from ratios of arithmetic mean losses. RMSE is the square root of MSEL in each replication. Families $(J,G)$ receive equal weight. The delta-method MCSE uses the components defined by shared seeds above. Its maximum across all shapes is reported in the text.
+\end{minipage}
+\end{table}

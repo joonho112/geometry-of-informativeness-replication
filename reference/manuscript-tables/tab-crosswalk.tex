@@ -1,0 +1,32 @@
+% Fixed-input summaries; detailed conditions are in Section 2.3.
+\begin{table}[!t]
+\caption{Summaries of a site-reliability profile and a related heterogeneity measure.}
+\label{tab:crosswalk}
+\centering
+\begin{tablebody}
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{1.72in}>{\raggedright\arraybackslash}p{1.28in}>{\raggedright\arraybackslash}X@{}}
+\toprule
+Quantity & Definition & Interpretation \\
+\midrule
+Reliability $S_j$ & $\sigma^2/(\sigma^2+v_j)$ & Signal as a proportion of total variance; conditional weight on the site's estimate. \\
+\addlinespace[5pt]
+Pooling weight $\omega_j$ & $1-S_j$ & Conditional weight on the hypermean; general posterior pooling measures may differ. \\
+\addlinespace[5pt]
+Informativeness $I$ & $\sigma^2/(\sigma^2+\tilde v)$ & Logit-scale center; $\tilde v=\mathrm{GM}(v_j)$. \\
+\addlinespace[5pt]
+Mean reliability $\bar S$ & $J^{-1}\sum_jS_j$ & Equals $R_b$ for the same inputs; determines the MSEL benchmark with known hyperparameters. \\
+\addlinespace[5pt]
+Dispersion $H$ & $J^{-1}\sum_j D_\phi(I,S_j)$ & Minimum residual discrepancy under the specified Bernoulli--KL loss. \\
+\addlinespace[5pt]
+Effective site count $J_{\mathrm{eff}}$ & $(\sum_jS_j)^2/\sum_jS_j^2$ & Concentration expressed as an equivalent site count; does not determine rank certainty or inferential sample size. \\
+\addlinespace[5pt]
+Variance proportion $R_{\mathrm{typ}}$ & $\sigma^2/(\sigma^2+v_{\mathrm{typ}})$ & Heterogeneity relative to the representative sampling variance in~\eqref{eq:typical-variance}. \\
+\bottomrule
+\end{tabularx}
+\end{tablebody}
+\par\vspace{0.4\baselineskip}
+\begin{minipage}{\linewidth}\normalsize\doublespacing\raggedright
+\textit{Note.} The inputs $\sigma^2,v_j$ are fixed and positive, and the equality with $R_b$ requires the same inputs and weights. $R_{\mathrm{typ}}$ differs from the truncated $Q$-based $I^2$ estimate. For $H$, $\phi=\phi_{\mathrm{KL}}$ and $D_\phi(p,q)=\mathrm{KL}\{\Bern(p)\|\Bern(q)\}$, as described in Section~\ref{sec:centroid}. The MSEL benchmark conditions on known hyperparameters.
+\end{minipage}
+\end{table}

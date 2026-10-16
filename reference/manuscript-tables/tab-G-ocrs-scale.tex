@@ -1,0 +1,22 @@
+\begin{table}[!t]
+\caption{Course passing diagnostics by first-stage specification and effect scale.}
+\label{tab:G-ocrs-scale}
+\centering
+\begin{tablebody}
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+Specification & $I$ [95\% CrI] & $\Pr(I>\tfrac12)$ & $H$ & $V$ \\
+\midrule
+Block-adjusted RD & $.671\ [.497,.812]$ & $.973$ & $.025$ & $.237$ \\
+\addlinespace[5pt]
+Unadjusted RD & $.632\ [.439,.790]$ & $.920$ & $.021$ & $.188$ \\
+\addlinespace[5pt]
+Unadjusted log OR & $.530\ [.253,.743]$ & $.627$ & $.035$ & $.306$ \\
+\bottomrule
+\end{tabular}
+\end{tablebody}
+\par\vspace{0.4\baselineskip}
+\begin{minipage}{\linewidth}\normalsize\doublespacing\raggedright
+\textit{Note.} All fits use $J=32$ sites and the normal working model with a reference measure flat in the mean and SD. Entries for $I$ and $H$ are posterior means obtained by integration. RD denotes risk difference and OR odds ratio. The unadjusted rows use the same counts by site and arm; the block-adjusted row uses the regression contrast in \eqref{eq:G-block-weights}. Credible intervals condition on the variances supplied for each specification.
+\end{minipage}
+\end{table}

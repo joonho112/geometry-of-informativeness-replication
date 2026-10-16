@@ -1,0 +1,36 @@
+# Local R/IDE/system state
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+.cache/
+.vscode/
+.idea/
+*~
+# Participant data is external and is never included.
+data/*
+!data/DATA_ACCESS.md
+# Generated analyses and local check results
+analysis/outputs/
+analysis/generated/
+analysis/Rlib/
+verification/generated/
+tmp/
+# Regenerable working plots and PDF previews
+analysis/outputs/figures/
+figures/png/
+fig_src/generated-cm/
+fig_src/*.aux
+fig_src/*.log
+fig_src/*.xdv
+fig_src/*.fls
+fig_src/*.fdb_latexmk
+# Aggregate .rds inputs are deliberately included; no blanket RDS exclusion.
+# Optional isolated dependency libraries and figure compilation scratch
+.R-library/
+.venv/
+fig_src/build-fig1-cm/

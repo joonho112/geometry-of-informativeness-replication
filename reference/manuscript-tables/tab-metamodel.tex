@@ -1,0 +1,35 @@
+% Generated from verified P05 CSVs; full nine-comparison table is in OSM.
+\begin{table}[!t]
+\caption{Variation in cell-mean log losses explained by reliability profiles.}
+\label{tab:metamodel}
+\centering
+\begin{tablebody}
+\begin{tabularx}{\linewidth}{@{}l*{4}{>{\raggedleft\arraybackslash}X}@{}}
+\toprule
+\multicolumn{5}{@{}l}{\emph{A. In-sample partial $R^2$ for added profile factors}} \\
+\addlinespace[5pt]
+Loss & PM & CB & GR & ML \\
+\midrule
+RMSE & .16 & .15 & .15 & $>$.99 \\
+\addlinespace[5pt]
+MSELP & .32 & .32 & .32 & .59 \\
+\addlinespace[5pt]
+ISEL & .22 & .36 & .52 & .76 \\
+\addlinespace[10pt]
+\multicolumn{5}{@{}l}{\emph{B. Five-fold CV $R^2$ with cells held out: selected comparisons}} \\
+\addlinespace[5pt]
+Loss & \multicolumn{1}{l}{Estimator} & $+H$ & $+V$ & $+\bar S$ \\
+\midrule
+RMSE & \multicolumn{1}{l}{PM} & .98964 & .99155 & .99843 \\
+\addlinespace[5pt]
+MSELP & \multicolumn{1}{l}{GR} & .99298 & .99470 & .99919 \\
+\addlinespace[5pt]
+ISEL & \multicolumn{1}{l}{GR} & .99586 & .99572 & .99518 \\
+\bottomrule
+\end{tabularx}
+\end{tablebody}
+\par\vspace{.4\baselineskip}
+\begin{minipage}{\linewidth}\normalsize\doublespacing\raggedright
+\textit{Note.} $I$, $H$, $V$, and $\bar S$ are calculated from the true generating profiles. Panel A reports $(R^2_\mathrm{full}-R^2_\mathrm{base})/(1-R^2_\mathrm{base})$. The base model is saturated in $(I,J,G)$, and the full model adds crossed $V$-by-shape factors. In Panel B, each summary $X$ enters as $X+X\times\mathrm{factor}(I)$, using the same model structure and cell folds. All nine comparisons are given in Online Appendix Table~\ref{tab:F-fair}. PM denotes the posterior mean, CB the implemented constrained-Bayes approximation, GR the triple-goal estimator, and ML the unpooled estimates. The results refer to the simulation grid.
+\end{minipage}
+\end{table}
